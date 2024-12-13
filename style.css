@@ -1,989 +1,684 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navber Start */
+
+/* General Styles */
+
 .header {
-  padding: 0px 0px;
-  /* background-color: blanchedalmond;    
-    width: 100%;
-    height: 210px; */
-}
-
-/* navber2 start */
-
-.navber1 {
-  padding: 0px 0px;
-}
-
-.navber1 .olx {
-  padding: 20px 120px;
-  gap: 20px;
   display: flex;
-}
-
-.navber1 .fa-car-rear {
-  font-size: 20px;
-  border-radius: 20px;
-  width: 44px;
-  height: 42px;
-  margin: 0px 30px;
-  cursor: pointer;
-  background-color: #4640404a;
-  padding: 10px 10px;
-}
-
-.navber1 .fa-car-rear:hover {
-  color: blue;
-}
-
-.navber1 .Motors {
-  color: #002f34;
-  margin: 0px -45px;
-  font-size: 20px;
-  padding: 10px 0px;
-  cursor: pointer;
-}
-
-.navber1 .Motors:hover {
-  color: blue;
-}
-
-.navber1 .fa-house {
-  font-size: 20px;
-  border-radius: 20px;
-  width: 44px;
-  height: 42px;
-  margin: 0px 50px;
-  cursor: pointer;
-  background-color: #4640404a;
-  padding: 10px 10px;
-}
-
-.navber1 .fa-house:hover {
-  color: blue;
-}
-
-.navber1 .Property {
-  color: #002f34;
-  margin: 0px -65px;
-  font-size: 20px;
-  padding: 10px 0px;
-  cursor: pointer;
-}
-
-.navber1 .Property:hover {
-  color: blue;
-}
-
-/* navber1 end */
-
-/* navber2 start */
-
-.navber2 {
-  margin: 0px 120px;
-}
-
-.navber2 .fa-location-dot {
-  margin: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
   position: absolute;
-  font-size: 20px;
+  width: 100%;
+  margin: -310px 0px;
 }
 
-.navber2 #select {
-  border-radius: 5px;
-  font-size: 15px;
-  color: black;
-  padding: 0px 40px;
-  width: 300px;
-  height: 40px;
+.nav {
+  flex-grow: 1;
 }
 
-.navber2 input {
-  border-radius: 5px;
-  margin: 0px 15px;
-  width: 700px;
-  height: 40px;
-}
-
-.navber2 .fa-magnifying-glass {
-  color: white;
-  background-color: black;
-  width: 50px;
-  height: 40px;
-  margin: 0px -22px;
-  padding: 7px 15px;
-  font-size: 20px;
-}
-
-.navber2 .Login {
-  margin: 0px 50px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.navber2 .img1 {
-  margin: 0px -30px;
-  position: absolute;
-}
-
-.navber2 .img2 {
-  margin: 15px -10px;
-  position: absolute;
-}
-
-.navber2 .Sell {
-  position: absolute;
-  margin: 12px 12px;
-  font-size: 20px;
-}
-/* navber2 end */
-
-hr {
-  margin: 30px 0px;
-}
-
-/* navber3 start */
-
-.navber3 {
-  margin: 0px 120px;
-}
-
-.navber3 ul {
-  display: flex;
-  gap: 15px;
+.nav-list {
   list-style: none;
+  display: inline-flex;
+  gap: 20px;
 }
 
-.navber3 .ALL {
+.nav-list li a {
   text-decoration: none;
-  color: #002f34;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 700;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.navber3 li a {
-  text-decoration: none;
-  color: #002f34;
-  cursor: pointer;
+.nav-list li a:hover {
+  text-decoration: underline;
 }
 
-/* navber3 end */
-
-.ads {
-  padding: 40px 120px;
-}
-
-.ads img {
-  border-radius: 2px;
-}
-
-.Categories {
-  padding: 0px 120px;
-}
-
-/* main-body start */
-
-.main-body {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 47px;
-  padding: 50px 120px;
-}
-
-.body {
-  padding: 0px 0px;
-}
-
-.main-body img {
-  width: 100px;
-  height: 100px;
-}
-
-.main-body .Mobile {
+.header .logo {
   text-align: center;
-  width: 100px;
-  margin: 0px 0px;
-  font-size: 1.1rem;
-}
-
-/* main-body end */
-
-/* card 1 start */
-
-.h1-mobile {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0px 104px;
-  gap: 955px;
-}
-
-.h1-mobile .mobile-1 {
-  padding: 0px 0px;
-}
-
-.h1-mobile a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.card {
-  cursor: pointer;
-  width: 300px;
-  height: 390px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content {
-  padding: 15px 10px;
-  display: flex;
-  gap: 176px;
-}
-
-.card-content .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container .Googlepixel8pro {
-  padding: 0px 10px;
-  font-size: 1.1rem;
-}
-
-.card-container .Ferozepur {
-  padding: 15px 10px;
-  font-size: 1.2rem;
-}
-
-.card-container .weeks2 {
-  padding: 0px 10px;
-  font-size: 1rem;
-}
-
-/* card 1 end */
-
-/* card 2 start */
-
-.h1-mobile-1 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0px 104px;
-  gap: 1090px;
-  line-height: 90px;
-}
-
-.h1-mobile-1 .mobile-1 {
-  padding: 0px 0px;
-}
-
-.h1-mobile-1 a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container-1 {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: -28px 0px;
-  justify-content: center;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content-1 {
-  padding: 15px 10px;
-  display: flex;
-  gap: 163px;
-}
-
-.card-content-1 .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content-1 .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container-1 .Googlepixel8pro {
-  padding: 0px 10px;
-  font-size: 1.1rem;
-}
-
-.card-container-1 .Ferozepur {
-  padding: 20px 10px;
-  font-size: 1rem;
-}
-
-.card-container-1 .Jamshed {
-  margin: -15px 10px;
-}
-
-.card-container-1 .weeks2 {
-  padding: 25px 10px;
-  font-size: 1rem;
-}
-
-/* card 2 end */
-
-/* card 3 start */
-
-.h1-mobile-3 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 60px 104px;
-  gap: 862px;
-}
-
-.h1-mobile-3 .mobile-1 {
-  padding: 0px 0px;
-}
-
-.h1-mobile-3 a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container-3 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: -50px 0px;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content-3 {
-  padding: 15px 10px;
-  display: flex;
-  gap: 163px;
-}
-
-.card-content-3 .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content-3 .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container-3 .Googlepixel8pro {
-  padding: 0px 10px;
-  font-size: 1.1rem;
-}
-
-.card-container-3 .Ferozepur {
-  padding: 30px 10px;
-  font-size: 1rem;
-}
-
-.card-container-3 .Johar-Town {
-  padding: 53px 10px;
-}
-
-.card-container-3 .weeks3 {
-  margin: -46px 10px;
-}
-
-.card-container-3 .Jamshed {
-  margin: -15px 10px;
-}
-
-.card-container-3 .weeks2 {
-  padding: 0px 10px;
-  font-size: 1rem;
-  margin: -20px 0px;
-}
-/* card 3 end */
-
-/* card 4 start */
-
-.h1-mobile-4 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 80px 104px;
-  gap: 1060px;
-}
-
-.h1-mobile-4 .mobile-1 {
-  padding: 0px 0px;
-}
-
-.h1-mobile-4 a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container-4 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: -70px 0px;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content-4 {
-  padding: 15px 10px;
-  display: flex;
-  gap: 154px;
-}
-
-.card-content-4 .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content-4 .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container-4 .Googlepixel8pro {
-  padding: 0px 10px;
-  font-size: 1.1rem;
-}
-
-.card-container-4 .paragraph-1 {
-  padding: 15px 10px;
-  font-size: 15px;
-}
-
-.card-container-4 .Ferozepur {
-  padding: 0px 10px;
-  font-size: 1rem;
-}
-
-.card-container-4 .Johar-Town {
-  padding: 0px 10px;
-}
-
-.card-container-4 .weeks3 {
-  margin: 0px 10px;
-}
-
-.card-container-4 .Jamshed {
-  margin: -15px 10px;
-}
-
-.card-container-4 .weeks2 {
-  padding: 0px 10px;
-  font-size: 1rem;
-  margin: 0px 0px;
-}
-/* card 4 end */
-
-/* card 5 start */
-
-.h1-mobile-5 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 115px 104px;
-  gap: 961px;
-}
-
-.h1-mobile-5 .mobile-1 {
-  padding: 0px 0px;
-}
-
-.h1-mobile-5 a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container-5 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: -105px 0px;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content-5 {
-  padding: 15px 10px;
-  display: flex;
-  gap: 185px;
-}
-
-.card-content-5 .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content-5 .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container-5 .Googlepixel8pro {
-  padding: 0px 10px;
-  font-size: 1.1rem;
-}
-
-.card-container-5 .Ferozepur {
-  padding: 25px 10px;
-  font-size: 1rem;
-}
-
-.card-container-5 .Jamshed {
-  margin: -15px 10px;
-}
-
-.card-container-5 .weeks2 {
-  padding: 0px 10px;
-  font-size: 1rem;
-  margin: -12px 0px;
-}
-
-/* card 5 end */
-
-/* card 6 start */
-
-.h1-mobile-6 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 145px 104px;
-  gap: 1060px;
-}
-
-.h1-mobile-6 .mobile-1 {
-  padding: 0px 0px;
-}
-
-.h1-mobile-6 a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container-6 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: -125px 0px;
-}
-
-.card {
-  cursor: pointer;
-  width: 300px;
-  height: 390px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content-6 {
-  padding: 15px 10px;
-  display: flex;
-  gap: 185px;
-}
-
-.card-content-6 .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content-6 .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container-6 .Googlepixel8pro {
-  padding: 0px 10px;
-  font-size: 1.1rem;
-}
-
-.card-container-6 .Ferozepur {
-  padding: 15px 10px;
-  font-size: 1.2rem;
-}
-
-.card-container-6 .weeks2 {
-  padding: 0px 10px;
-  font-size: 1rem;
-}
-
-/* card 6 end */
-
-/* card 7 Start */
-
-.h1-mobile-7 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 160px 104px;
-  gap: 972px;
-}
-
-.h1-mobile-7 .mobile-1 {
-  padding: 0px 0px;
-}
-
-.h1-mobile-7 a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container-7 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: -145px 0px;
-}
-
-.card {
-  cursor: pointer;
-  width: 300px;
-  height: 390px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content {
-  padding: 15px 10px;
-  display: flex;
-  gap: 176px;
-}
-
-.card-content .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container-7 .Googlepixel8pro {
-  padding: 0px 10px;
-  font-size: 1.1rem;
-}
-
-.card-container-7 .Ferozepur {
-  padding: 30px 10px;
-  font-size: 16px;
-}
-
-.card-container-7 .weeks2 {
-  padding: 0px 10px;
-  font-size: 1rem;
   margin: -20px 0px;
 }
 
-/* card 7 end */
-
-/* card 8 Start */
-
-.h1-mobile-8 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 180px 104px;
-  gap: 1090px;
+.logo a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
 }
 
-.h1-mobile-8 .mobile-1 {
+.header .login {
+  text-align: end;
+}
+
+.login button {
+  color: black;
+  padding: 0px 0px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.login .fa-solid {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0px 12px;
+}
+
+.login .fa-brands {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .login {
+    margin-left: auto;
+  }
+}
+
+/* Navber End */
+
+/* SUMMER COLLECTION Start  */
+
+.SUMMER {
   padding: 0px 0px;
 }
 
-.h1-mobile-8 a {
-  text-decoration: none;
-  padding: 9px 0px;
-  color: #3a77ff;
-  font-weight: 700;
-  white-space: nowrap;
-  font-size: larger;
-}
-
-.card-container-8 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: -165px 0px;
-}
-
-.card {
-  cursor: pointer;
-  width: 300px;
-  height: 390px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-}
-
-.card img {
-  width: 312px;
-  height: 200px;
-}
-
-.card-content-8 {
-  padding: 15px 10px;
-  display: flex;
-  gap: 0px;
-}
-
-.card-content-8 .Rs135 {
-  font-size: 1.1rem;
-}
-
-.card-content-8 .fa-regular {
-  font-size: 1.4rem;
-}
-
-.card-container-8 .Ferozepur {
-  padding: 50px 10px;
-  font-size: 16px;
-}
-
-.card-container-8 .weeks2 {
-  padding: 0px 10px;
-  font-size: 1rem;
-  margin: -40px 0px;
-}
-
-/* card 8 end */
-
-.ads-23 {
-  padding: 190px 248px;
+.COLLECTION {
   position: absolute;
+  text-align: center;
+  padding: 50px 26px;
 }
 
-/* End start */
-
-.img-end-1 {
-  margin: 459px 0px;
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-  height: 200px;
-  background: rgba(0, 47, 52, 0.03);
-}
-
-.img-end-1 .img-end-2 {
+.COLLECTION p {
   padding: 0px 0px;
+  font-size: 132px;
+  text-align: center;
 }
 
-.img-end-1 img {
+.COLLECTION button {
+  background-color: white;
+  margin: 155px 0px;
+  width: 160px;
+  height: 60px;
   padding: 0px 0px;
+  font-size: 20px;
+  color: black;
+  border: 2px solid white;
 }
 
-.img-end-1 .Try-the-OLX {
-  padding: 0px 0px;
-}
-
-.img-end-1 .Trythe {
-  padding: 30px 0px;
-  text-transform: uppercase;
-  font-size: 36px;
-}
-
-.img-end-1 .Buy {
-  font-size: 25px;
-  max-width: 30rem;
-}
-
-.img-end-1 .Get-your {
-  padding: 80px 0px;
-}
-
-.img-end-1 .Getyour {
-  text-transform: uppercase;
-  font-size: 15px;
+.COLLECTION button:hover {
+  background-color: transparent;
+  border: 5px solid black;
+  color: white;
 }
 
 .images {
-  display: flex;
-  gap: 10px;
-  padding: 20px 0px;
+  padding: 0px 0px;
 }
 
 .images img {
+  margin: -155px 0px;
+  width: 100%;
+}
+
+/* SUMMER COLLECTION End */
+
+.EVERYDAY {
+  padding: 200px 0px;
+  text-align: center;
+}
+
+.EVERYDAY p {
+  padding: 0px 0px;
+  font-size: 25px;
+}
+
+/* New In Start */
+
+.NEW {
+  padding: 0pxH 0px;
+}
+
+.NEW .IN {
+  border-top-style: groove;
+  display: flex;
+  gap: 1220px;
+  text-align: center;
+  padding: 30px 40px;
+  margin: -100px 0px;
+}
+
+.IN p {
+  font-size: 25px;
+}
+
+.IN a {
+  font-size: 18px;
+}
+
+.IN a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+}
+
+.IN .fa-arrow-right {
+  padding: 0px 7px;
+}
+
+.puffy {
+  display: flex;
+  padding: 100px 0px;
+}
+
+.puffy p {
+  border: 1px solid black;
+  padding: 0px 0px;
+}
+
+.puffy .NewIn {
   cursor: pointer;
-  width: 120px;
+  color: blue;
+  margin: 40px 40px;
+  position: absolute;
+}
+
+.puffy p img {
+  cursor: pointer;
+  width: 100%;
+  height: 500px;
+}
+
+.puffy .stitch {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0px 30px;
+  font-size: 1rem;
+}
+
+.bag {
+  cursor: pointer;
+  padding: 0px 30px;
+  line-height: 40px;
+}
+
+/* New In End */
+
+/* New In Start */
+.SHOP {
+  padding: 0px 80px;
+}
+
+.SHOP h1 {
+  margin: -50px 0px;
+  font-size: 30px;
+}
+
+/* card Start  */
+.card-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 90px 0px;
+}
+
+.card-2 {
+  border: 1px solid black;
+  padding: 0px 0px;
+}
+
+.card-2 .paragraph-1 {
+  font-size: 23px;
+  position: absolute;
+  padding: 35px 65px;
+}
+
+.card-2 img {
+  width: 758px;
   height: 100%;
   padding: 0px 0px;
 }
 
-/* End end */
-
-/* lastend start  */
-
-.last-end {
-  background-color: #ebeeef;
-  border-top: 1px solid rgba(0, 47, 52, 0.2);
+.card-2 .main-para {
   display: flex;
-  gap: 75px;
-  padding: 0px 0px;
-  margin: -460px 0px;
-  width: 100%;
-  justify-content: center;
-}
-
-.last-end .end-1 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.last-end h3 {
-  font-size: 14px;
-  padding: 15px 0px;
-  text-transform: uppercase;
-}
-
-.last-end a {
-  font-size: 14px;
-  text-decoration: none;
-  color: rgba(0, 47, 52, 0.64);
-}
-
-.last-end .end-2 {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-}
-
-.last-end .end-3 {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-}
-
-.last-end .end-4 {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-}
-
-.end-5 {
-  padding: 12px 60px;
-}
-
-.end-5 h2 {
-  text-transform: uppercase;
-}
-
-.end-5 .fa-twitter {
-  padding: 0px 10px;
-}
-
-.end-5 .fa-facebook {
-  padding: 0px 10px;
-}
-.end-5 .fa-play {
-  padding: 0px 10px;
-}
-
-.end-5 .fa-instagram {
-  padding: 0px 10px;
-}
-
-.end-5 .class {
-  display: flex;
-  gap: 5px;
-}
-
-.end-5 .class img {
-  width: 60px;
-  cursor: pointer;
-  /* height: 100px; */
-  padding: 40px 0px;
-}
-
-/* lastend end */
-
-/* last start */
-
-.free {
-  height: 30px;
-  background-color: black;
-  padding: 5px 0px;
-  margin: 460px 0px;
+  gap: 445px;
   position: absolute;
-  width: 100%;
+  margin: -50px 50px;
 }
 
-.free .Pakistan {
-  color: white;
-  float: right;
-  display: flex;
-  gap: 10px;
-  padding: 0px 20px;
-}
-
-.free .Pakistan span {
+.card-2 .paragraph-2 {
+  font-size: 18px;
   padding: 0px 0px;
 }
 
-/* last end   */
+.card-2 .paragraph-3 {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0px 0px;
+}
+
+.card-2 .fa-arrow-right {
+  padding: 0px 6px;
+}
+
+.card-2 .paragraph-3:hover {
+  font-size: 20px;
+}
+
+.card-2 .main-para-2 {
+  display: flex;
+  gap: 343px;
+  position: absolute;
+  margin: -50px 50px;
+}
+
+.card-2 .main-para-3 {
+  display: flex;
+  gap: 425px;
+  position: absolute;
+  margin: -50px 50px;
+}
+
+.card-1 .card-3 {
+  width: 758px;
+  height: 100%;
+  padding: 0px 0px;
+}
+
+.card-3 p {
+  padding: 0px 58px;
+}
+
+.card-3 p .NewIn {
+  color: blue;
+  cursor: pointer;
+  position: absolute;
+  margin: 60px 50px;
+}
+
+.card-3 p img {
+  cursor: pointer;
+  width: 534px;
+  height: 100%;
+}
+
+.card-3 .stitch {
+  cursor: pointer;
+  padding: 0px 58px;
+}
+
+.card-3 .bag {
+  cursor: pointer;
+  padding: 0px 58px;
+}
+
+.main-para-1 {
+  display: flex;
+  gap: 160px;
+  position: absolute;
+  margin: 680px 40px;
+}
+
+.para .deserves {
+  font-size: 20px;
+}
+
+.para .Describe {
+  width: 389px;
+  font-size: 16px;
+  padding: 20px 0px;
+}
+
+.main-para-1 button {
+  cursor: pointer;
+  width: 140px;
+  height: 55px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+
+.main-para-1 button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* card End */
+
+/* Class-1 Start  */
+.class-1 {
+  padding: 0px 0px;
+}
+
+.class-1 .class-2 {
+  margin: -90px 0px;
+}
+
+.class-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.class-2 .UPTO {
+  position: absolute;
+  margin: -420px 257px;
+  font-size: 130px;
+  width: 77%;
+}
+
+.class-2 .Plus {
+  position: absolute;
+  margin: -252px 618px;
+  font-size: 22px;
+}
+
+.class-2 .ShopSale {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  position: absolute;
+  margin: -133px 674px;
+  width: 174px;
+  height: 60px;
+  font-size: 14px;
+}
+
+.class-2 .ShopSale:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+/* Class-1 End */
+
+/* FIND Start  */
+.FIND {
+  display: flex;
+  position: absolute;
+  margin: 130px 0px;
+  border: 2px solid black;
+  width: 100%;
+  height: 70%;
+  border-right: none;
+  border-left: none;
+}
+
+.FIND .INSTAGRAM {
+  padding: 35px 30px;
+  font-size: 22px;
+}
+
+.INSTAGRAM .para-1 {
+  width: 92%;
+  padding: 0px 0px;
+}
+
+.INSTAGRAM .para-1:hover {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+}
+
+.INSTAGRAM .Look {
+  display: flex;
+  gap: 120px;
+  margin: 370px 0px;
+}
+
+.Look .para-2 {
+  width: 265px;
+  font-size: 17px;
+}
+
+.Look a {
+  font-size: 15px;
+  padding: 20px 0px;
+}
+
+.Look .fa-arrow-right {
+  padding: 0px 10px;
+}
+
+.images-1 {
+  display: flex;
+  padding: 35px 30px;
+}
+/* FIND End */
+
+/* Bare-1 Start */
+.Bare-1 {
+  display: flex;
+  gap: 0px;
+  margin: 700px 0px;
+  position: absolute;
+}
+
+.Bare-2 {
+  padding: 0px 32px;
+}
+
+.Bare-2 .introduce {
+  padding: 0px 0px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.Bare-2 a {
+  text-decoration: none;
+}
+
+.Bare-2 .space {
+  margin-top: 40px;
+  width: 445px;
+}
+
+.Bare-2 .SUBSCRIBE {
+  padding: 60px 0px;
+  font-size: 18px;
+}
+
+.Bare-2 .first {
+  color: #7d7575;
+  padding: 0px 0px;
+}
+
+.Bare-2 .Email {
+  color: #7d7575;
+  padding: 25px 0px;
+}
+
+.Bare-2 input {
+  width: 499px;
+  height: 40px;
+  border-top-style: none;
+  text-decoration: underline;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.Bare-2 input:hover {
+  background-color: rgba(12, 12, 12, 0.096);
+}
+
+.Bare-2 .checkbox {
+  margin: 30px -228px;
+  font-size: 103px;
+  width: 100%;
+  height: 15px;
+}
+
+.Bare-2 span {
+  font-size: 13px;
+  margin: 0px -5px;
+}
+
+.Bare-2 button {
+  position: absolute;
+  margin: 14px 76px;
+  width: 170px;
+  height: 50px;
+  background: transparent;
+  font-size: 15px;
+}
+
+.Bare-2 button:hover {
+  background-color: black;
+  color: white;
+}
+
+.Bare-3 {
+  padding: 0px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Bare-3 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.Bare-3 p {
+  padding: 0px 0px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.Bare-3 p a {
+  color: #0000008c;
+  text-decoration: none;
+}
+
+.Bare-4 {
+  margin: 0px -120px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Bare-4 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.Bare-4 p {
+  padding: 0px 0px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.Bare-4 p a {
+  color: #0000008c;
+  text-decoration: none;
+}
+
+.Bare-5 {
+  padding: 0px 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Bare-5 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.Bare-5 p {
+  padding: 0px 0px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.Bare-5 p a {
+  color: #0000008c;
+  text-decoration: none;
+}
+
+.Bare-6 {
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Bare-6 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.Bare-6 p {
+  padding: 0px 0px;
+  font-size: 16px;
+}
+
+.Bare-6 p a {
+  color: #0000008c;
+  text-decoration: none;
+}
+/* Bare-1 End */
+
+hr {
+  position: absolute;
+  margin: 1250px 0px;
+  width: 100%;
+}
+
+/* main-Last Start */
+.main-Last {
+  display: flex;
+  position: absolute;
+  margin: 1250px 0px;
+  padding: 27px 0px;
+  width: 100%;
+}
+
+.main-Last .Last {
+  display: flex;
+  padding: 0px 35px;
+}
+
+.main-Last .images-last {
+  display: flex;
+}
+
+.images-last img {
+  width: 30px;
+  height: 25px;
+}
+
+.main-Last .Wix {
+  float: right;
+}
+
+.main-Last .Wix p a {
+  color: black;
+}
+/* main-Last End */
